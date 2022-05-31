@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="icon" rel="icon" href="http://www.pokemongobrasil.com/wp-content/uploads/2016/08/pokebola-go.png">
+    <link rel="stylesheet" href="/styleDetalhes.css">
+    <title>Detalhes pokemon</title>
+</head>
+<div>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/cadastro">Cadastrar</a></li>
+                <li><a href="/"><h1>Pokedex</h1></a></li>
+                <li id="meus"><a href="/">Meus pokemons</a></li>
+  
+  
+           
+            </ul>
+        </nav>
+    </header>
+    <section id="detalhes">
+        <h2 id="titulo">Detalhes de <%= pokedex[id].nome %></h1>
+        <img id="poke" src="<%= pokedex[id].imagem%>" alt="">
+        <div id="container">
+    <div class="infos">
+    <h2>Nome:</h2>
+    <p><%= pokedex[id].nome %></p>
+</div>
+
+    <div class="infos">
+    <h2>Tipo:</h2>
+    <p><%= pokedex[id].tipo %></p>
+</div>
+
+    <div class="infos">
+    <h2>Categoria:</h2>
+    <p><%= pokedex[id].categoria %></p>
+</div>
+
+    <div class="infos">
+    <h2>Peso:</h2>
+    <p><%= pokedex[id].peso %></p>
+</div>
+
+    <div class="infos">
+    <h2>Altura</h2>
+    <p><%= pokedex[id].tamanho %></p>
+</div>
+
+    <div class="infos">
+    <h2>descricao:</h2>
+    <p><%= pokedex[id].descricao %></p>
+</div>
+</div>
+</section>
+</body>
+</div>
+</html>

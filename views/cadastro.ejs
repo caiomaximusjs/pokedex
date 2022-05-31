@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="icon" rel="icon" href="http://www.pokemongobrasil.com/wp-content/uploads/2016/08/pokebola-go.png">
+    <link rel="stylesheet" href="styleCadastro.css">
+    <title>Cadastrar pokemon</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/cadastro">Cadastrar</a></li>
+            <li><a href="/"><h1>Pokedex</h1></a></li>
+            <li><a href="/">Meus pokemons</a></li>
+
+
+       
+        </ul>
+    </nav>
+    <section id="cadastro">
+
+          <h2>Cadastre um novo pokemon</h2>
+          <form action="/create" method="POST">
+            <div class="container">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="digite o nome do seu pokemon" required>
+        </div>
+<div class="container">
+            <label for="descricao">Descrição</label>
+            <input type="text" id="descricao" name="descricao" placeholder="digite a descrição do pokemon" required>
+        </div>
+<div class="container">
+            <label for="tipo">Selecione o tipo</label>
+	<select id="tipo" name="tipo">
+		<option value="Grass">grass</option>
+		<option value="Water">water</option>
+		<option value="Normal">Normal</option>
+		<option value="Poison">Poison</option>
+		<option value="Fire">Fire</option>
+		<option value="Electric">Electric</option>
+		<option value="Ground">Ground</option>
+		<option value="Fighting">Fighting</option>
+		<option value="Psychic">Psychic</option>
+		<option value="Rock">Rock</option>
+		<option value="Flying">Flying</option>
+		<option value="Ghost">Ghost</option>
+		<option value="Ice">Ice</option>
+		<option value="Steel">Steel</option>
+		<option value="Dark">Dark</option>
+		<option value="Fairy">Fairy</option>
+	</select>
+        </div>
+            <div class="container">
+            <label for="imagem">Link da imagem</label>
+            <input type="text" id="imagem" name="imagem" required>
+        </div>
+            <div class="container">
+            <label for="categoria">categoria</label>
+            <input type="text" id="categoria" name="categoria" placeholder="ex: Semente, tartaruga..." required>
+        </div>
+
+            <div class="container">
+            <label for="tamanho">tamanho</label>
+            <input type="text" id="tamanho" name="tamanho" placeholder="ex: 6.3m" required>
+        </div>
+            <div class="container">
+            <label for="peso">peso</label>
+            <input type="text" id="peso" name="peso" placeholder="ex: 4.6kg" required>
+        </div>
+
+
+            <button onclick="alert(`o pokemon foi cadastrado na sua pokedex`)"" id="btnCadastrar" type="submit">Cadastrar</button>
+
+        </form>
+        
+
+        
+    </section>
+</body>
+</html>

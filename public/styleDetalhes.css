@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Macondo&family=Oswald:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Macondo&family=Oswald:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto mono", monospace;
+}
+body {
+  background-color: #83cb53;
+  background-image: url(http://i.imgur.com/UZKEjzG.png);
+  background-repeat: no-repeat;
+}
+nav {
+  margin-top: -10rem;
+  background-color: red;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+}
+nav h1 {
+  letter-spacing: 0.4rem;
+  font-family: bebas neue;
+  color: white;
+  font-size: 3rem;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.6rem;
+  text-decoration: none;
+  color: white;
+}
+nav ul li a {
+  font-family: bebas neue;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease-in-out;
+  font-size: 2rem;
+}
+nav ul li a:hover {
+  transform: scale(1.05);
+  color: rgb(153, 201, 249);
+}
+section#detalhes {
+  background-image: url(https://i.pinimg.com/736x/e6/5f/4a/e65f4a73e2a09c6ef3661d1197587f57.jpg);
+  background-color: rgb(88, 87, 87);
+  background-blend-mode: overlay;
+  margin-top: 10rem;
+  padding: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1.3rem;
+  text-align: center;
+  width: 35rem;
+  margin-bottom: 6rem;
+}
+section#detalhes div.infos {
+  text-align: center;
+  padding: 0.4rem;
+  background-color: rgb(230, 230, 230);
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+  border: solid 6px black;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+section#detalhes div.infos h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+section#detalhes div.infos p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+section#detalhes h2#titulo {
+  color: white;
+  margin-top: -1rem;
+  font-size: 1.6rem;
+  margin-right: -14rem;
+}
+img#poke {
+  width: 12rem;
+  background-image: url(https://cutewallpaper.org/21/pokemon-background-gif/Beautiful-Pokemon-Scenery-Pokemon-Amino.gif);
+  background-repeat: no-repeat;
+  border-radius: 5rem;
+  background-size: 500px;
+  margin-left: -27rem;
+  border: solid 10px black;
+}
+@media only screen and (max-width: 900px) {
+  nav {
+    margin-top: -10rem;
+    padding-bottom: 0.3rem;
+    width: 100%;
+  }
+  nav ul h1 {
+    font-size: 1.4rem;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  nav ul li {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.4rem;
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a {
+    font-family: bebas neue;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-in-out;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav ul li a:hover {
+    transform: scale(1.05);
+    color: rgb(153, 201, 249);
+  }
+  body {
+    background-color: #83cb53;
+    background-image: url(http://i.imgur.com/UZKEjzG.png);
+    background-repeat: no-repeat;
+  }
+  section#detalhes {
+    background-image: url(https://i.pinimg.com/736x/e6/5f/4a/e65f4a73e2a09c6ef3661d1197587f57.jpg);
+    background-size: 100%;
+    background-color: rgb(88, 87, 87);
+    background-blend-mode: overlay;
+    margin-top: 10rem;
+    padding: 2rem;
+    margin-left: 12rem;
+    margin-right: auto;
+    border-radius: 1.5rem;
+    width: 20rem;
+    height: 45rem;
+  }
+  section#detalhes div.infos {
+    text-align: center;
+    padding: 0.2rem;
+    background-color: rgb(230, 230, 230);
+    justify-content: space-evenly;
+    margin-top: 0.3rem;
+    border-radius: 1.5rem;
+    border: solid 6px black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section#detalhes div.infos h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  section#detalhes div.infos p {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  section#detalhes h2#titulo {
+    color: white;
+    margin-top: -1rem;
+    font-size: 1rem;
+    margin-right: -7rem;
+  }
+  img#poke {
+    width: 6.5rem;
+    background-image: url(https://cutewallpaper.org/21/pokemon-background-gif/Beautiful-Pokemon-Scenery-Pokemon-Amino.gif);
+    background-repeat: no-repeat;
+    border-radius: 5rem;
+    background-size: 500px;
+    margin-left: -15rem;
+    border: solid 7px black;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  nav {
+    padding-bottom: 0.3rem;
+    width: 100%;
+  }
+  nav ul h1 {
+    font-size: 1.4rem;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  nav ul li {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.4rem;
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a {
+    font-family: bebas neue;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-in-out;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav ul li a:hover {
+    transform: scale(1.05);
+    color: rgb(153, 201, 249);
+  }
+  body {
+    background-color: #83cb53;
+    background-image: url(http://i.imgur.com/UZKEjzG.png);
+    background-repeat: no-repeat;
+  }
+  section#detalhes {
+    background-image: url(https://i.pinimg.com/736x/e6/5f/4a/e65f4a73e2a09c6ef3661d1197587f57.jpg);
+    background-size: 100%;
+    background-color: rgb(88, 87, 87);
+    background-blend-mode: overlay;
+    margin-top: 10rem;
+    padding: 2rem;
+    margin-left: 12rem;
+    margin-right: auto;
+    border-radius: 1.5rem;
+    width: 20rem;
+    height: 35rem;
+  }
+  section#detalhes div.infos {
+    text-align: center;
+    padding: 0.1rem;
+    background-color: rgb(230, 230, 230);
+    justify-content: space-evenly;
+    margin-top: 0.3rem;
+    border-radius: 1.5rem;
+    border: solid 6px black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section#detalhes div.infos h2 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  section#detalhes div.infos p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  section#detalhes h2#titulo {
+    color: white;
+    margin-top: -1rem;
+    font-size: 0.9rem;
+    margin-right: -9rem;
+  }
+  img#poke {
+    width: 5rem;
+    margin-top: 0.5rem;
+    background-image: url(https://cutewallpaper.org/21/pokemon-background-gif/Beautiful-Pokemon-Scenery-Pokemon-Amino.gif);
+    background-repeat: no-repeat;
+    border-radius: 5rem;
+    background-size: 500px;
+    margin-left: -16rem;
+    border: solid 10px black;
+  }
+}

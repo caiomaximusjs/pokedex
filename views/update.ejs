@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      id="icon"
+      rel="icon"
+      href="http://www.pokemongobrasil.com/wp-content/uploads/2016/08/pokebola-go.png"
+    />
+    <link rel="stylesheet" href="/styleUpdate.css" />
+    <title>Editar Pokemon</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/cadastro">Cadastrar</a></li>
+        <li>
+          <a href="/"><h1>Pokedex</h1></a>
+        </li>
+        <li><a href="/">Meus pokemons</a></li>
+      </ul>
+    </nav>
+    <section id="editar">
+      <div id="imagem">
+        <img id="pokeImg" src="<%= pokedex[id].imagem%>" alt="" />
+      </div>
+
+      <div id="forms">
+        <h2>Editar Pokemon</h2>
+
+        <form action="/update/<%= pokedex[id].id %>" method="POST">
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="digite o nome do seu pokemon"
+            value="<%=pokedex[id].nome%>"
+            
+          />
+
+          <label for="descricao">Descrição</label>
+          <input
+            type="text"
+            id="descricao"
+            name="descricao"
+            placeholder="digite a descrição do pokemon"
+            value="<%= pokedex[id].descricao %>"
+          />
+
+          <label for="tipo">Tipo</label>
+          <input
+            type="text"
+            id="tipo"
+            name="tipo"
+            placeholder="ex: fire, grass, water..."
+            value="<%= pokedex[id].tipo %>"
+          />
+
+          <label for="categoria">categoria</label>
+          <input
+            type="text"
+            id="categoria"
+            name="categoria"
+            placeholder="ex: Semente, tartaruga..."
+            value="<%=pokedex[id].categoria %>"
+          />
+
+          <label for="tamanho">tamanho</label>
+          <input
+            type="text"
+            id="tamanho"
+            name="tamanho"
+            placeholder="ex: 6.3m"
+            value="<%=pokedex[id].tamanho %>"
+          />
+
+          <label for="peso">peso</label>
+          <input
+            type="text"
+            id="peso"
+            name="peso"
+            placeholder="ex: 4.6kg"
+            value="<%=pokedex[id].peso %>"
+          />
+
+          <label for="imagem">Link da imagem</label>
+          <input
+            type="text"
+            id="imagem"
+            name="imagem"
+            value="<%= pokedex[id].imagem%>"
+          />
+
+          <button
+            onclick="alert(`o pokemon foi Editado`)"
+            id="btnAtualizar"
+            type="submit"
+          >
+            Atualizar
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

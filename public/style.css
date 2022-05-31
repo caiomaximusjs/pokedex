@@ -1,0 +1,769 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Macondo&family=Oswald:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Macondo&family=Oswald:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto mono", monospace, "bebas neue";
+}
+body {
+  background-image: url(https://i.pinimg.com/736x/34/0d/02/340d0229f3fdbf79062f4365a1d91d10--free-cartoons-vector-stock.jpg);
+  background-blend-mode: overlay;
+  background-color: #e4f4fb;
+}
+nav {
+  margin-top: 0rem;
+  background-color: red;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+}
+nav h1 {
+  letter-spacing: 0.4rem;
+  font-family: bebas neue;
+  color: white;
+  font-size: 3rem;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.6rem;
+  text-decoration: none;
+  color: white;
+}
+nav ul li a {
+  font-family: bebas neue;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease-in-out;
+  font-size: 2rem;
+}
+nav ul li a:hover {
+  transform: scale(1.05);
+  color: rgb(153, 201, 249);
+}
+main {
+  margin: 0rem 3rem 0 3rem;
+}
+img#dialogo {
+  margin: auto;
+  width: 65%;
+  display: block;
+  margin-bottom: -15rem;
+  transition: 0.2s ease-in-out;
+}
+
+section#cards {
+  display: flex;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  justify-content: space-evenly;
+  margin-top: 9rem;
+  flex-wrap: wrap;
+}
+section#cards a#cliqueTela {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+h2 {
+  margin-top: 9rem;
+  text-align: center;
+  font-size: 6rem;
+  color: #ff0000;
+  font-family: bebas neue;
+}
+section#cards div.pokemon:hover {
+  background-image: url(https://cutewallpaper.org/21/pokemon-background-gif/Pokemon-Mystery-Dungeon-GIF-Find-and-Share-on-GIPHY.gif);
+  background-repeat: no-repeat;
+  background-size: 300px 420px;
+  transform: scale(1.1);
+  -webkit-filter: none;
+  filter: none;
+  filter: none;
+}
+section#cards div.pokemon {
+  border-radius: 1.5rem;
+  background-image: url(/img/tela.png);
+  background-repeat: no-repeat;
+  background-color: rgb(177, 224, 91);
+  background-blend-mode: overlay;
+  margin-top: 2rem;
+  width: 10rem;
+  box-shadow: 6px 5px 5px #00000015;
+  padding: 2.5rem;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+  border: solid 2px rgb(161, 0, 0);
+  transition: 0.3s ease-in-out;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+section#cards div.pokemon img {
+  width: 100%;
+}
+section#cards div.pokemon h3 {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+  font-family: bebas neue;
+  margin-bottom: -1rem;
+  margin-top: -2.5rem;
+  text-align: center;
+}
+section#cards div.pokemon p.description {
+  margin-bottom: 1rem;
+}
+section#cards div.pokemon p {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+section#cards h2 {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 4rem;
+  font-size: 3rem;
+}
+a#newPokemon {
+  padding: 0.8rem;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #d92525;
+  border: solid 1.6px rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border-radius: 0.6rem;
+}
+a#newPokemon:hover {
+  transform: matrix3d(1.1);
+  transform: scale(1.1);
+  background-color: #8c1f28;
+}
+
+section#cards a#editar {
+  padding: 0.5rem;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.67rem;
+  background-color: #ffffff;
+  border: solid 1.6px rgb(213, 13, 13);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: rgb(213, 13, 13);
+  margin: 0.5rem;
+  border-radius: 0.2rem;
+}
+section#cards a#editar:hover {
+  background-color: rgb(255, 10, 10);
+  color: white;
+}
+section#cards a#apagar {
+  padding: 0.5rem;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.67rem;
+  background-color: #ffffff;
+  border: solid 1.6px rgb(213, 13, 13);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: rgb(213, 13, 13);
+  margin: 0.5rem;
+  border-radius: 0.2rem;
+}
+section#cards a#apagar:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+section#cards div#editDelete {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+section#cards div.pokemon h4 {
+  justify-content: center;
+  display: flex;
+  font-size: 0.9rem;
+}
+section#cards a#details {
+  padding: 0.5rem;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.67rem;
+  background-color: #ffffff;
+  border: solid 1.6px rgb(213, 13, 13);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: rgb(213, 13, 13);
+  margin: 0.5rem;
+  border-radius: 0.2rem;
+}
+section#cards a#details:hover {
+  background-color: #df0505;
+  color: white;
+}
+footer {
+  background-color: #d92525;
+  padding: 1.5rem;
+  margin-top: 5rem;
+  width: 100%;
+}
+footer ul {
+  list-style: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+footer ul li#link {
+  margin-top: -1rem;
+}
+footer ul li#git {
+  margin-top: -1rem;
+}
+footer ul li i {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  text-align: right;
+  margin-left: 3rem;
+  transition: 0.2s ease-in-out;
+}
+footer ul li i:hover {
+  color: rgb(0, 157, 255);
+}
+footer ul li p {
+  text-align: center;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+footer ul li a:hover {
+  color: rgb(106, 2, 92);
+  transform: scale(1.1);
+}
+
+/* RESPONSIVIDADE 900PX*/
+
+@media only screen and (max-width: 1009px) {
+  nav {
+    padding: 0.2rem;
+    width: 100%;
+  }
+  nav ul h1 {
+    font-size: 2rem;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  nav ul li {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.6rem;
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a {
+    font-family: bebas neue;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-in-out;
+    font-size: 1.4rem;
+  }
+  nav ul li a:hover {
+    transform: scale(1.05);
+    color: rgb(153, 201, 249);
+  }
+  main {
+    margin: 0rem 0rem 0 0rem;
+  }
+  img#dialogo {
+    margin-bottom: -13rem;
+  }
+  section#cards {
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    justify-content: space-evenly;
+    margin-top: 9rem;
+    flex-wrap: wrap;
+  }
+  section#cards a#cliqueTela {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  h2 {
+    margin-top: 9rem;
+    text-align: center;
+    font-size: 4rem;
+    color: #ff0000;
+    font-family: bebas neue;
+  }
+  section#cards div.pokemon:hover {
+    background-image: url(https://cutewallpaper.org/21/pokemon-background-gif/Pokemon-Mystery-Dungeon-GIF-Find-and-Share-on-GIPHY.gif);
+    background-repeat: no-repeat;
+    background-size: 300px 420px;
+    transform: scale(1.1);
+    -webkit-filter: none;
+    filter: none;
+    filter: none;
+  }
+  section#cards div.pokemon {
+    border-radius: 1.5rem;
+    background-image: url(/img/tela.png);
+    background-repeat: no-repeat;
+    background-color: rgb(177, 224, 91);
+    background-blend-mode: overlay;
+    margin-top: 2rem;
+    width: 8rem;
+    height: 12rem;
+    box-shadow: 6px 5px 5px #00000015;
+    padding: 2.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: solid 2px rgb(161, 0, 0);
+    transition: 0.3s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+  }
+  section#cards div.pokemon img {
+    width: 100%;
+  }
+  section#cards div.pokemon h3 {
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+    font-family: bebas neue;
+    text-align: center;
+  }
+  section#cards div.pokemon p {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  section#cards h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 4rem;
+    font-size: 2rem;
+  }
+  a#newPokemon {
+    padding: 1rem;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.7rem;
+    background-color: #d92525;
+    border: solid 1.6px rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: -5rem;
+    border-radius: 0.6rem;
+  }
+  a#newPokemon:hover {
+    transform: matrix3d(1.1);
+    transform: scale(1.1);
+    background-color: #8c1f28;
+  }
+
+  section#cards a#editar {
+    padding: 0.3rem;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.55rem;
+    background-color: #ffffff;
+    border: solid 1.6px rgb(213, 13, 13);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: rgb(213, 13, 13);
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+  }
+  section#cards a#editar:hover {
+    background-color: rgb(255, 10, 10);
+    color: white;
+  }
+  section#cards a#apagar {
+    padding: 0.3rem;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.55rem;
+    background-color: #ffffff;
+    border: solid 1.6px rgb(213, 13, 13);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: rgb(213, 13, 13);
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+  }
+  section#cards a#apagar:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+  }
+  section#cards div#editDelete {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  section#cards div.pokemon h4 {
+    justify-content: center;
+    display: flex;
+    font-size: 0.7rem;
+    margin-top: -2rem;
+  }
+  section#cards a#details {
+    padding: 0.3rem;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.55rem;
+    background-color: #ffffff;
+    border: solid 1.6px rgb(213, 13, 13);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: rgb(213, 13, 13);
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+  }
+  section#cards a#details:hover {
+    background-color: #df0505;
+    color: white;
+  }
+  footer {
+    background-color: #d92525;
+    padding: 1.5rem;
+    margin-top: 5rem;
+    width: 95%;
+  }
+  footer ul {
+    list-style: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  footer ul li#link {
+    margin-top: -1rem;
+  }
+  footer ul li#git {
+    margin-top: -1rem;
+  }
+  footer ul li i {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    margin-left: 3rem;
+    transition: 0.2s ease-in-out;
+  }
+  footer ul li i:hover {
+    color: rgb(0, 157, 255);
+  }
+  footer ul li p {
+    text-align: center;
+    font-family: bebas neue;
+    font-size: 1.4rem;
+  }
+  footer ul li a {
+    font-family: bebas neue;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+  }
+  footer ul li a:hover {
+    color: rgb(106, 2, 92);
+    transform: scale(1.1);
+  }
+}
+
+/* RESPONSIVIDADE CELULAR */
+
+@media only screen and (max-width: 550px) {
+  nav {
+    padding-bottom: 0.3rem;
+    width: 100%;
+  }
+  nav ul h1 {
+    font-size: 1.4rem;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  nav ul li {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.4rem;
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a {
+    font-family: bebas neue;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-in-out;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav ul li a:hover {
+    transform: scale(1.05);
+    color: rgb(153, 201, 249);
+  }
+  main {
+    margin: 0rem 0rem 0 0rem;
+  }
+  img#dialogo {
+    margin-bottom: -10rem;
+  }
+  section#cards {
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    justify-content: space-evenly;
+    margin-top: 9rem;
+    flex-wrap: wrap;
+  }
+  section#cards a#cliqueTela {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  h2 {
+    margin-top: 9rem;
+    text-align: center;
+    font-size: 3rem;
+    color: #ff0000;
+    font-family: bebas neue;
+  }
+  section#cards div.pokemon:hover {
+    background-image: url(https://cutewallpaper.org/21/pokemon-background-gif/Pokemon-Mystery-Dungeon-GIF-Find-and-Share-on-GIPHY.gif);
+    background-repeat: no-repeat;
+    background-size: 300px 420px;
+    transform: scale(1.1);
+    -webkit-filter: none;
+    filter: none;
+    filter: none;
+  }
+  section#cards div.pokemon {
+    border-radius: 1.5rem;
+    background-image: url(/img/tela.png);
+    background-repeat: no-repeat;
+    background-color: rgb(177, 224, 91);
+    background-blend-mode: overlay;
+    width: 6.5rem;
+    height: 10.3rem;
+    box-shadow: 6px 5px 5px #00000015;
+    padding: 2.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.7rem;
+    border: solid 2px rgb(161, 0, 0);
+    transition: 0.3s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+  }
+  section#cards div.pokemon img {
+    width: 100%;
+  }
+  section#cards div.pokemon h3 {
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+    font-family: bebas neue;
+    text-align: center;
+  }
+  section#cards div.pokemon p {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  section#cards h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 4rem;
+    font-size: 3rem;
+  }
+  a#newPokemon {
+    padding: 1rem;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.55rem;
+    font-weight: 800;
+    background-color: #d92525;
+    border: solid 1.6px rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: -5rem;
+    border-radius: 0.6rem;
+  }
+  a#newPokemon:hover {
+    transform: matrix3d(1.1);
+    transform: scale(1.1);
+    background-color: #8c1f28;
+  }
+
+  section#cards a#editar {
+    padding: 0.3rem;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.55rem;
+    background-color: #ffffff;
+    border: solid 1.6px rgb(213, 13, 13);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: rgb(213, 13, 13);
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+  }
+  section#cards a#editar:hover {
+    background-color: rgb(255, 10, 10);
+    color: white;
+  }
+  section#cards a#apagar {
+    padding: 0.3rem;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.55rem;
+    background-color: #ffffff;
+    border: solid 1.6px rgb(213, 13, 13);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: rgb(213, 13, 13);
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+  }
+  section#cards a#apagar:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+  }
+  section#cards div#editDelete {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  section#cards div.pokemon h4 {
+    justify-content: center;
+    display: flex;
+    font-size: 0.7rem;
+    margin-top: -2rem;
+  }
+  section#cards a#details {
+    padding: 0.3rem;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    font-size: 0.5rem;
+    background-color: #ffffff;
+    border: solid 1.6px rgb(213, 13, 13);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: rgb(213, 13, 13);
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+  }
+  section#cards a#details:hover {
+    background-color: #df0505;
+    color: white;
+  }
+  footer {
+    background-color: #d92525;
+    padding: 1rem;
+    margin-top: 5rem;
+    width: 100%;
+  }
+  footer ul {
+    list-style: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  footer ul li#link {
+    margin-top: 0.3rem;
+  }
+  footer ul li#git {
+    margin-top: 0.3rem;
+    margin-left: -1.2rem;
+  }
+  footer ul li i {
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    margin-left: 1.6rem;
+    transition: 0.2s ease-in-out;
+  }
+  footer ul li i:hover {
+    color: rgb(0, 157, 255);
+  }
+  footer ul li p {
+    margin-left: -3rem;
+    text-align: center;
+    font-family: bebas neue;
+    font-size: 1rem;
+  }
+  footer ul li a {
+    font-family: bebas neue;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+  }
+  footer ul li a:hover {
+    color: rgb(106, 2, 92);
+    transform: scale(1.1);
+  }
+}
